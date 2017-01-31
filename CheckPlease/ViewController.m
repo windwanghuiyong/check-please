@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "CheckMarkRecoginzer.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -16,14 +19,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    CheckMarkRecoginzer *check = [[CheckMarkRecoginzer alloc] initWithTarget:self action:@selector(doCheck:)];
+    [self.view addGestureRecognizer:check];
+    self.imageView.hidden = YES;
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)doCheck:(CheckMarkRecoginzer *)check {
+    self.imageView.hidden = NO;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{self.imageView.hidden = YES;});
 }
-
 
 @end

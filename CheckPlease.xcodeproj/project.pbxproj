@@ -13,6 +13,8 @@
 		0C2E48EC1E40CD5E00AAA30E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2E48EA1E40CD5E00AAA30E /* Main.storyboard */; };
 		0C2E48EE1E40CD5E00AAA30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C2E48ED1E40CD5E00AAA30E /* Assets.xcassets */; };
 		0C2E48F11E40CD5E00AAA30E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2E48EF1E40CD5E00AAA30E /* LaunchScreen.storyboard */; };
+		0C2E48FA1E40CDBB00AAA30E /* CGPointUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E48F81E40CDBB00AAA30E /* CGPointUtils.c */; };
+		0C2E48FD1E40CE0E00AAA30E /* CheckMarkRecoginzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E48FC1E40CE0E00AAA30E /* CheckMarkRecoginzer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		0C2E48ED1E40CD5E00AAA30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C2E48F01E40CD5E00AAA30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C2E48F21E40CD5E00AAA30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C2E48F81E40CDBB00AAA30E /* CGPointUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CGPointUtils.c; sourceTree = "<group>"; };
+		0C2E48F91E40CDBB00AAA30E /* CGPointUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPointUtils.h; sourceTree = "<group>"; };
+		0C2E48FB1E40CE0E00AAA30E /* CheckMarkRecoginzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckMarkRecoginzer.h; sourceTree = "<group>"; };
+		0C2E48FC1E40CE0E00AAA30E /* CheckMarkRecoginzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckMarkRecoginzer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				0C2E48E51E40CD5E00AAA30E /* AppDelegate.m */,
 				0C2E48E71E40CD5E00AAA30E /* ViewController.h */,
 				0C2E48E81E40CD5E00AAA30E /* ViewController.m */,
+				0C2E48FB1E40CE0E00AAA30E /* CheckMarkRecoginzer.h */,
+				0C2E48FC1E40CE0E00AAA30E /* CheckMarkRecoginzer.m */,
+				0C2E48F81E40CDBB00AAA30E /* CGPointUtils.c */,
+				0C2E48F91E40CDBB00AAA30E /* CGPointUtils.h */,
 				0C2E48EA1E40CD5E00AAA30E /* Main.storyboard */,
 				0C2E48ED1E40CD5E00AAA30E /* Assets.xcassets */,
 				0C2E48EF1E40CD5E00AAA30E /* LaunchScreen.storyboard */,
@@ -151,9 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C2E48FA1E40CDBB00AAA30E /* CGPointUtils.c in Sources */,
 				0C2E48E91E40CD5E00AAA30E /* ViewController.m in Sources */,
 				0C2E48E61E40CD5E00AAA30E /* AppDelegate.m in Sources */,
 				0C2E48E31E40CD5E00AAA30E /* main.m in Sources */,
+				0C2E48FD1E40CE0E00AAA30E /* CheckMarkRecoginzer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
